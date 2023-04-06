@@ -24,7 +24,7 @@ class BooksController extends Controller
         return redirect('/books');
     }
 
-    protected function validateRequest(): array
+    protected function validateRequest()
     {
         return request()->validate([
             'title' => 'required',
